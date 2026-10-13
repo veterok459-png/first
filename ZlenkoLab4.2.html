@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Самостійна робота 4.2 - Вертикальні рядки</title>
+</head>
+<body bgcolor="#f4f4f4" text="#222222">
+    <h2 align="center">Лабораторна робота №4 - Завдання 4.2</h2>
+
+    <!-- 1. Текст та рисунки у рядку коливаються по вертикалі -->
+    <p align="center">
+        <b>1. Вертикальне коливання тексту та рисунків:</b><br>
+        <marquee width="300" height="120" bgcolor="#ffebcd" direction="up" behavior="alternate">
+            <center>
+                <font color="#a0522d" size="4"><b>Текст коливається вертикально</b></font><br>
+                <img src="https://via.placeholder.com/60x30" alt="мал">
+            </center>
+        </marquee>
+    </p>
+
+    <!-- 2. Послідовність рисунків пробігає знизу до гори та з’являється знову -->
+    <p align="center">
+        <b>2. Послідовність рисунків знизу догори:</b><br>
+        <marquee width="300" height="120" bgcolor="#e0ffff" direction="up" behavior="scroll">
+            <center>
+                <img src="https://via.placeholder.com/50x30/ff7f50/ffffff?text=1" alt="img1"><br>
+                <img src="https://via.placeholder.com/50x30/20b2aa/ffffff?text=2" alt="img2"><br>
+                <img src="https://via.placeholder.com/50x30/ba55d3/ffffff?text=3" alt="img3">
+            </center>
+        </marquee>
+    </p>
+
+    <!-- 3. Послідовність рисунків пробігає згори до низу із зупинкою у границі області -->
+    <p align="center">
+        <b>3. Послідовність рисунків згори донизу із зупинкою:</b><br>
+        <marquee width="300" height="120" bgcolor="#f0fff0" direction="down" behavior="slide">
+            <center>
+                <img src="https://via.placeholder.com/50x30/ff6347/ffffff?text=A" alt="imgA"><br>
+                <img src="https://via.placeholder.com/50x30/4169e1/ffffff?text=B" alt="imgB">
+            </center>
+        </marquee>
+    </p>
+
+    <!-- 4. Створити два рядки, текст в яких переміщується з різними режимами запізнення (швидкості) -->
+    <p align="center">
+        <b>4. Два вертикальні рядки з різним запізненням:</b><br>
+        <table align="center" cellspacing="10">
+            <tr>
+                <td>
+                    <!-- Рядок 4а: Повільний рух вгору -->
+                    <marquee width="250" height="100" bgcolor="#faebd7" direction="up" scrollamount="2">
+                        <font color="#cd5c5c" size="3">Рядок 4а (повільний рух знизу догори)</font>
+                    </marquee>
+                </td>
+                <td>
+                    <!-- Рядок 4б: Швидкий рух вгору -->
+                    <marquee width="250" height="100" bgcolor="#e6e6fa" direction="up" scrollamount="8">
+                        <font color="#483d8b" size="3">Рядок 4б (швидкий рух знизу догори)</font>
+                    </marquee>
+                </td>
+            </tr>
+        </table>
+    </p>
+</body>
+</html>

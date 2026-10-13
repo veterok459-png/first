@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Самостійна робота 4.1 - Горизонтальні рядки, що біжать</title>
+</head>
+<body bgcolor="#f4f4f4" text="#222222">
+    <h2 align="center">Лабораторна робота №4 - Завдання 4.1</h2>
+
+    <!-- 1. Текст у рядку коливається з боку в бок -->
+    <p align="center">
+        <b>1. Коливання з боку в бік:</b><br>
+        <marquee width="800" bgcolor="#ffcccc" height="40" behavior="alternate">
+            <font color="#8b0000" face="Arial" size="4"><b>Текст коливається з боку в бік (behavior="alternate")</b></font>
+        </marquee>
+    </p>
+
+    <!-- 2. Текст пробігає справа наліво та з’являється знову -->
+    <p align="center">
+        <b>2. Рух справа наліво (з повторенням):</b><br>
+        <marquee width="800" bgcolor="#ccffcc" height="40" direction="left" behavior="scroll" loop="infinite">
+            <font color="#006400" face="Verdana" size="4"><b>Цей текст пробігає справа наліво та з'являється знову!</b></font>
+        </marquee>
+    </p>
+
+    <!-- 3. Текст у рядку пробігає зліва направо та зупиняється -->
+    <p align="center">
+        <b>3. Рух зліва направо із зупинкою:</b><br>
+        <marquee width="800" bgcolor="#ccccff" height="40" direction="right" behavior="slide">
+            <font color="#00008b" face="Tahoma" size="4"><b>Цей текст пробігає зліва направо і зупиняється (behavior="slide")</b></font>
+        </marquee>
+    </p>
+
+    <!-- 4. Два рядки, текст в яких переміщується з різними режимами запізнення (швидкістю руху - scrollamount) -->
+    <p align="center">
+        <b>4. Рядки з різними режимами запізнення/швидкості:</b><br>
+        
+        <!-- Перший рядок із повільним запізненням -->
+        <marquee width="800" bgcolor="#fffacd" height="40" scrollamount="3" scrolldelay="100">
+            <font color="#b8860b" face="Courier New" size="4"><b>Рядок 4а: Повільний рух (scrollamount="3")</b></font>
+        </marquee>
+        <br>
+        <!-- Другий рядок із швидким рухом -->
+        <marquee width="800" bgcolor="#ffe4e1" height="40" scrollamount="12" scrolldelay="50">
+            <font color="#c71585" face="Georgia" size="4"><b>Рядок 4б: Швидкий рух (scrollamount="12")</b></font>
+        </marquee>
+    </p>
+</body>
+</html>
