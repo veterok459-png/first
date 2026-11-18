@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>ZlenkoLab07-2 — Усі елементи форми</title>
+</head>
+<body bgcolor="#F0F4F8">
+
+
+    <form action="ZlenkoLab07-result.htm" method="get" target="_blank">
+        <!-- Приховане поле -->
+        <input type="hidden" name="student_group" value="303-TH">
+
+        <table border="1" cellpadding="8" cellspacing="0" bgcolor="#FFFFFF" width="650">
+            <tr>
+                <td width="250"><b>1. Текстове поле (Логін):</b></td>
+                <td><input type="text" name="login" size="35" maxlength="30" placeholder="Введіть логін"></td>
+            </tr>
+            <tr>
+                <td><b>2. Поле для пароля:</b></td>
+                <td><input type="password" name="user_pass" size="35" maxlength="20"></td>
+            </tr>
+            <tr>
+                <td><b>3. Перемикачі (Форма навчання):</b></td>
+                <td>
+                    <input type="radio" name="study_form" value="denna" checked> Денна<br>
+                    <input type="radio" name="study_form" value="zaochna"> Заочна
+                </td>
+            </tr>
+            <tr>
+                <td><b>4. Прапорці (Володіння мовами):</b></td>
+                <td>
+                    <input type="checkbox" name="lang_ua" value="yes" checked> Українська<br>
+                    <input type="checkbox" name="lang_en" value="yes"> Англійська<br>
+                    <input type="checkbox" name="lang_pl" value="yes"> Польська
+                </td>
+            </tr>
+            <tr>
+                <td><b>5. Випадаючий список (Місто):</b></td>
+                <td>
+                    <select name="city" size="1">
+                        <option value="poltava" selected>Полтава</option>
+                        <option value="kyiv">Київ</option>
+                        <option value="kharkiv">Харків</option>
+                        <option value="lviv">Львів</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><b>6. Список із множинним вибором (Улюблені технології):</b></td>
+                <td>
+                    <select name="tech" size="4" multiple>
+                        <option value="html" selected>HTML5 / CSS3</option>
+                        <option value="js">JavaScript</option>
+                        <option value="python" selected>Python</option>
+                        <option value="csharp">C#</option>
+                        <option value="sql">MySQL</option>
+                    </select>
+                    <br><small><i>(Утримуйте Ctrl для вибору кількох варіантів)</i></small>
+                </td>
+            </tr>
+            <tr>
+                <td><b>7. Вибір файлу (Завантажити фото):</b></td>
+                <td><input type="file" name="avatar"></td>
+            </tr>
+            <tr>
+                <td><b>8. Багаторядкове текстове поле (Додаткові відомості):</b></td>
+                <td><textarea name="comments" rows="4" cols="40">Додаткова інформація...</textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" bgcolor="#E2E8F0">
+                    <input type="submit" value="Надіслати форму">
+                    <input type="reset" value="Скинути значення">
+                    <input type="button" value="Перевірити" onclick="alert('Усі поля готові до відправки!')">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

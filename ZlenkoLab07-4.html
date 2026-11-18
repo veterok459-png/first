@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>ZlenkoLab07-4 — Замовлення на товар</title>
+</head>
+<body bgcolor="#F7F9FC">
+
+    <form action="ZlenkoLab07-result.htm" method="get" target="_blank">
+        <table border="1" cellpadding="8" cellspacing="0" bgcolor="#FFFFFF" width="620">
+            <tr bgcolor="#DCE6F1">
+                <th colspan="2" align="center">Оформлення замовлення</th>
+            </tr>
+
+            <!-- Номер банківського рахунку -->
+            <tr>
+                <td width="250"><b>Номер банківського рахунку:</b></td>
+                <td><input type="text" name="bank_account" size="38" maxlength="29" placeholder="UA000000000000000000000000000" required></td>
+            </tr>
+
+            <!-- Особистий номер користувача -->
+            <tr>
+                <td><b>Особистий номер користувача:</b></td>
+                <td><input type="text" name="personal_id" size="38" maxlength="15" placeholder="Введіть ваш ID" required></td>
+            </tr>
+
+            <!-- Список товарів (один або декілька) -->
+            <tr>
+                <td valign="top">
+                    <b>Список товарів:</b><br>
+                    <small><i>(Для вибору декількох товарів утримуйте клавішу Ctrl)</i></small>
+                </td>
+                <td>
+                    <select name="products" size="5" multiple>
+                        <option value="laptop" selected>Ноутбук HP Victus 15</option>
+                        <option value="monitor">Монітор 24" FullHD IPS</option>
+                        <option value="keyboard">Механічна клавіатура</option>
+                        <option value="mouse">Бездротова миша</option>
+                        <option value="ssd">Накопичувач SSD 1TB NVMe</option>
+                        <option value="router">Wi-Fi роутер Gigabit</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Вид оплати (радіокнопки) -->
+            <tr>
+                <td><b>Вид оплати:</b></td>
+                <td>
+                    <input type="radio" name="payment_type" value="cash" checked> Готівковий розрахунок<br>
+                    <input type="radio" name="payment_type" value="cashless"> Безготівковий розрахунок
+                </td>
+            </tr>
+
+            <!-- Додаткова інформація при відповіді (прапорці) -->
+            <tr>
+                <td valign="top"><b>Додаткова інформація при відповіді:</b></td>
+                <td>
+                    <input type="checkbox" name="info_balance" value="yes" checked> Дані про залишки на рахунку<br>
+                    <input type="checkbox" name="info_payments" value="yes"> Список останніх виплат по рахунку
+                </td>
+            </tr>
+
+            <!-- Довільні коментарі -->
+            <tr>
+                <td valign="top"><b>Довільні коментарі користувача:</b></td>
+                <td>
+                    <textarea name="user_comment" rows="4" cols="40" placeholder="Вкажіть побажання щодо доставки або замовлення..."></textarea>
+                </td>
+            </tr>
+
+            <!-- Кнопки -->
+            <tr bgcolor="#EDF2F7">
+                <td colspan="2" align="center">
+                    <input type="submit" value="Підтвердити замовлення">
+                    <input type="reset" value="Очистити форму">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
